@@ -3,7 +3,8 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Spa, Dumbbell, Pool, Yoga, Utensils, Wine, Coffee, Clock, Car, Plane, Car as CarIcon, MapPin, Waves, Users, Music, BookOpen } from "lucide-react";
+import { Bubbles as Spa, Dumbbell, WavesLadder as Pool, Heart as Yoga, Utensils, Wine, Coffee, Clock, Car, Plane, Car as CarIcon, MapPin, Waves, Users, Music, BookOpen } from "lucide-react";
+import { galleryImages } from "./Gallery";
 
 export default function Amenities() {
   const { t } = useLanguage();
@@ -120,7 +121,7 @@ export default function Amenities() {
                   className="aspect-square rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105"
                 >
                   <img 
-                    src={`https://images.unsplash.com/photo-${1550000000000 + index * 100000}?w=400&h=400&fit=crop`}
+                    src={`${galleryImages[index].src}`}
                     alt={`Amenity ${index + 1}`}
                     className="w-full h-full object-cover"
                   />

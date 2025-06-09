@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 // Sample gallery images
-const galleryImages = [
+export const galleryImages = [
   {
     id: 1,
     src: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop",
